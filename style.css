@@ -1,0 +1,25 @@
+/*
+Theme Name: Fictional University
+Theme URI: https://github.com/Mr-spShuvo/Fictional-University-WordPress-Theme.git
+Author: Brad Schiff
+Author URI: https://learnwebcode.com/
+Description: A educational custom wordpress theme. This theme is based on the "Become a WordPress Developer: Unlocking Power With Code" course by Brad Schiff.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ficuni
+Tags: 
+*/
+
+
+/* 3rd party packages */
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
