@@ -28,3 +28,48 @@ function ficuni_theme_features(){
 }
 
 add_action('after_setup_theme', 'ficuni_theme_features');
+
+
+function ficuni_custom_post_types(){
+  register_post_type( 'event', array(
+    'public' => true,
+    'supports' => array(
+      'title', 'editor', 'excerpt'
+    ),
+    'has_archive' => true,
+    'labels' => array(
+      'name' => 'Events',
+      'add_new_item' => 'Add new Event',
+      'edit_item' => 'Edit Event',
+      'all_items' => 'All Events',
+      'singular_name' => 'Event',
+    ),
+    'menu_icon' => 'dashicons-calendar',
+    'rewrite' => array(
+      'slug' => 'events'
+    ),
+  ));
+
+}
+add_action('init', 'ficuni_custom_post_types');
+
+
+
+function ficuni_adjust_quaries($query){
+  if(!is_admin() && is_post_type_archive('event') && $query->is_main_query()){
+    $today = date('Ymd');
+    $query->set('order', 'ASC');
+    $query->set('orderby', 'meta_value_num');
+    $query->set('meta_key', 'event_date');
+    $query->set('meta_query', array(
+      array(
+        'key' => 'event_date',
+        'compare' => '>=',
+        'value' => $today,
+        'type' => 'numeric'
+      )
+    ));
+  }
+}
+
+add_action('pre_get_posts', 'ficuni_adjust_quaries');

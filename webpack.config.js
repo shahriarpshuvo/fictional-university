@@ -75,6 +75,7 @@ module.exports = {
       }
     ]
   },
+  
   plugins: [
     new MiniCssExtractPlugin({
       filename: './assets/css/app.min.css'

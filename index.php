@@ -20,7 +20,7 @@
     </div>
     <div class="generic-content">
       <?php the_excerpt(); ?>
-      <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo;</a></p>
+      <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Read More &raquo;</a></p>
     </div>
   </div>
 
