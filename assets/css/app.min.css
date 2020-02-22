@@ -726,17 +726,17 @@ p, li {
 /* Customize Login Screen */
 body.login .button-primary {
   background-color: #F95738;
-  border-color: color(#F95738 b(+10%));
-  text-shadow: 0 -1px 1px color(#F95738 b(+15%)),1px 0 1px color(#F95738 b(+15%)),0 1px 1px color(#F95738 b(+15%)),-1px 0 1px color(#F95738 b(+15%));
-  box-shadow: 0 1px 0 color(#F95738 b(+20%));
+  border-color: rgb(224, 84, 56);
+  text-shadow: 0 -1px 1px rgb(212, 82, 56),1px 0 1px rgb(212, 82, 56),0 1px 1px rgb(212, 82, 56),-1px 0 1px rgb(212, 82, 56);
+  box-shadow: 0 1px 0 rgb(199, 80, 56);
 }
 body.login .button-primary:hover,
 body.login .button-primary:active,
 body.login .button-primary:focus {
-  background-color: color(#F95738 b(+7%));
-  border-color: color(#F95738 b(+15%));
-  text-shadow: 0 -1px 1px color(#F95738 b(+20%)),1px 0 1px color(#F95738 b(+20%)),0 1px 1px color(#F95738 b(+20%)),-1px 0 1px color(#F95738 b(+20%));
-  box-shadow: 0 1px 0 color(#F95738 b(+25%));
+  background-color: rgb(232, 85, 56);
+  border-color: rgb(212, 82, 56);
+  text-shadow: 0 -1px 1px rgb(199, 80, 56),1px 0 1px rgb(199, 80, 56),0 1px 1px rgb(199, 80, 56),-1px 0 1px rgb(199, 80, 56);
+  box-shadow: 0 1px 0 rgb(186, 78, 56);
 }
 body.login {
   background-color: #FAF0CA;
@@ -775,26 +775,26 @@ body.login {
     background-color: #EE964B;
   }
 .btn--orange:hover {
-    background: linear-gradient(#EE964B, color(#EE964B b(+30%) s(+80%)));
+    background: linear-gradient(#EE964B, rgb(235, 109, 0));
   }
 .btn--dark-orange {
     background-color: #F95738;
   }
 .btn--dark-orange:hover {
-    background: linear-gradient(#F95738, color(#F95738 b(+40%) s(+80%)));
+    background: linear-gradient(#F95738, rgb(204, 34, 0));
   }
 .btn--blue {
     background-color: #0D3B66;
   }
 .btn--blue:hover {
-    background: linear-gradient(color(#0D3B66 b(-16%)), #0D3B66);
+    background: linear-gradient(rgb(13, 80, 143), #0D3B66);
   }
 .btn--yellow {
     background-color: #F4D35E;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .22);
   }
 .btn--yellow:hover {
-    background: linear-gradient(#F4D35E, color(#F4D35E b(+40%) s(+80%)));
+    background: linear-gradient(#F4D35E, rgb(240, 188, 0));
   }
 .btn--beige {
     background-color: #FAF0CA;
@@ -847,7 +847,7 @@ body.login {
   line-height: 1.65;
 }
 .submit-note:hover {
-  background-color: color(#F95738 b(+10%) s(+10%));
+  background-color: rgb(235, 77, 45);
 }
 @media (min-width: 635px) {
 .edit-note, .delete-note {
@@ -974,7 +974,7 @@ body.login {
 .site-header__menu {
     visibility: hidden;
     position: absolute;
-    background-color: color(#0D3B66 a(89%) b(+3%));
+    background-color: rgba(13, 55, 94, 0.89);
     left: 0;
     right: 0;
     top: -20px;
@@ -1447,10 +1447,10 @@ body.admin-bar .search-overlay {
     left: 0;
     right: 0;
     padding: 3px 10px;
-    background-color: color(#F95738 a(85%) b(+15%) s(+20%));
+    background-color: rgba(236, 68, 34, 0.85);
   }
 .professor-card:hover .professor-card__name {
-    background-color: color(#F95738 a(85%) b(+25%) s(+20%));
+    background-color: rgba(213, 62, 32, 0.85);
   }
 .professor-card__list-item {
     display: inline-block;
@@ -1644,7 +1644,7 @@ body.admin-bar .search-overlay {
         background-color: #0D3B66;
       }
 .page-links li {
-    border-top: 1px solid color(#FAF0CA l(-14%));
+    border-top: 1px solid rgb(244, 223, 138);
   }
 .page-links li:first-child {
     border-top: none;
@@ -1652,7 +1652,7 @@ body.admin-bar .search-overlay {
 .page-links__active,
   .page-links .current_page_item {
     text-align: center;
-    background-color: color(#FAF0CA blackness(+11%) s(+50%));
+    background-color: rgb(244, 231, 180);
     color: #0D3B66;
     font-weight: bold;
   }
@@ -1665,8 +1665,8 @@ body.admin-bar .search-overlay {
     transition: all .3s;
   }
 .page-links li a:hover {
-    color: color(#0D3B66 b(+6%));
-    background-color: color(#FAF0CA blackness(+18%) s(+65%));
+    color: rgb(13, 51, 87);
+    background-color: rgb(238, 225, 170);
   }
 .acf-map {
 width: 100%;
@@ -1715,10 +1715,10 @@ margin: 20px 0;
 .metabox p {
     margin: 0;
     font-size: .9rem;
-    color: color(#FAF0CA l(-45%) s(-33%));
+    color: rgb(168, 146, 56);
   }
 .metabox a {
-    color: color(#FAF0CA l(-45%) s(-33%));
+    color: rgb(168, 146, 56);
     text-decoration: none;
     font-weight: bold;
   }
@@ -1735,7 +1735,7 @@ margin: 20px 0;
   }
 .metabox .metabox__blog-home-link:hover {
     text-decoration: none;
-    background-color: color(#0D3B66 l(-5%));
+    background-color: rgb(11, 47, 81);
   }
 .post-item {
   border-bottom: 1px dotted #DEDEDE;
