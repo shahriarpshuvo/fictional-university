@@ -56,7 +56,12 @@ function ficuni_adjust_quaries($query){
 
 add_action('pre_get_posts', 'ficuni_adjust_quaries');
 
+function acf_google_map_api( $api ){
+	$api['key'] = 'AIzaSyA07Dtq_l8CmBggm61kmXeh1ewyj2oeD2I';
+	return $api;
+}
 
+add_filter('acf/fields/google_map/api', 'acf_google_map_api');
 
 
 // Custom Functionality
@@ -140,6 +145,26 @@ function ficuni_custom_post_types(){
     ),
     'menu_icon' => 'dashicons-welcome-learn-more',
   ));
+  //Event Post Types
+  register_post_type( 'campus', array(
+    'public' => true,
+    'supports' => array(
+      'title', 'editor', 'excerpt'
+    ),
+    'has_archive' => true,
+    'labels' => array(
+      'name' => 'Campuses',
+      'add_new_item' => 'Add new Campus',
+      'edit_item' => 'Edit Campus',
+      'all_items' => 'All Campuses',
+      'singular_name' => 'Campus',
+    ),
+    'menu_icon' => 'dashicons-location-alt',
+    'rewrite' => array(
+      'slug' => 'campuses'
+    ),
+  ));
 
 }
 add_action('init', 'ficuni_custom_post_types');
+
