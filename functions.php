@@ -57,7 +57,7 @@ function ficuni_adjust_quaries($query){
 add_action('pre_get_posts', 'ficuni_adjust_quaries');
 
 function acf_google_map_api( $api ){
-	$api['key'] = 'AIzaSyA07Dtq_l8CmBggm61kmXeh1ewyj2oeD2I';
+	$api['key'] = 'AIzaSyBh9b1rNCp6kOi5JeMHiRP4klDymBeoEWk';
 	return $api;
 }
 

@@ -10,6 +10,7 @@
 <body <?php body_class(); ?>>
 
   <header class="site-header">
+
     <div class="container">
       <h1 class="school-logo-text float-left"><a href="<?php echo site_url(); ?>"><strong>Fictional</strong>
           University</a></h1>
@@ -29,7 +30,9 @@
               <a href="<?php echo get_post_type_archive_link('event'); ?>">Events</a>
             </li>
             <li><a href="<?php echo site_url('/campuses'); ?>">Campuses</a></li>
-            <li <?php if(get_post_type()=="post" && !is_archive()) echo 'class="current-menu-item"'; ?>><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+            <li <?php if(get_post_type()=="post" && !is_archive()) echo 'class="current-menu-item"'; ?>>
+              <a href="<?php echo site_url('/blog'); ?>">Blog</a>
+            </li>
           </ul>
         </nav>
         <div class="site-header__util">
